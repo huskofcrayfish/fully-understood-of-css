@@ -3,35 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <style type="text/css">
+
+        body *{
+            font-size: min(10vw, 6vh);
+        }
+
         p {
             position: relative;
-            font-size: 24px;
+            margin: 0;
             color: black;
             width: auto;
             white-space: nowrap;
-            width: max-content;
-            padding: 1.5em;
         }
+
         p::before {
             position: absolute;
-            left: -1.0em;
             content: "";
-            width: 100%;
-            height: 100%;
-            max-width: 8.0em;
-            max-height: 4em;
+            left: -2.5em;
+            width: 8.0em;
+            height: 4em;
             border: solid 1.5px black;
             border-radius: 1.0em;
         }
 
         div {
-            display: flex;
-            align-items: center;
-            height: 95vh;
-            width: fit-content;
-            margin-left: calc((100% - (7em + 1.5em + 1.0em)) / 2);
+            display: block;
+            margin-top: calc(50dvh - 2em);
+            margin-left: calc((100vw - 7em + 2.5em) / 2);
         }
 
         span {
